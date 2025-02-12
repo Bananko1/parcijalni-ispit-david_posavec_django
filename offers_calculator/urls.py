@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),  # Routes for accounts app
     path('products/', include('products.urls')),  # Routes for products app
+    path('customers/', include('customers.urls')),  # Routes for customers app
     path('offers/', include('offers.urls')),      # Routes for offers app
     path('', lambda request: redirect('offer_list'), name='home'),  # Redirect root to offers_list
 ]
